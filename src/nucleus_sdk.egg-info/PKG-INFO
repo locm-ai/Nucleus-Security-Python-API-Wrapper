@@ -1,12 +1,66 @@
-# Unofficial Nucleus Security Python API Wrapper
+Metadata-Version: 2.1
+Name: nucleus-sdk
+Version: 0.1.0
+Summary: Python SDK for the Nucleus Security API
+Home-page: https://github.com/nucleus/nucleus-python-sdk
+Author: Nucleus SDK Team
+Author-email: Nucleus SDK Team <support@nucleus.com>
+License: MIT License
+        
+        Copyright (c) 2024 Nucleus SDK Contributors
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/locm-ai/Nucleus-Security-Python-API-Wrapper
+Project-URL: Documentation, https://github.com/locm-ai/Nucleus-Security-Python-API-Wrapper#readme
+Project-URL: Repository, https://github.com/locm-ai/Nucleus-Security-Python-API-Wrapper.git
+Project-URL: Issues, https://github.com/locm-ai/Nucleus-Security-Python-API-Wrapper/issues
+Keywords: nucleus,security,api,sdk,vulnerability management
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: typing-extensions>=4.0.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
 
-This is an **unofficial** third-party Python SDK for interacting with the Nucleus Security API. This SDK provides a simple and intuitive interface to access Nucleus Security's vulnerability management platform, with support for both synchronous and asynchronous operations.
+# Nucleus Python SDK
 
-> **Note**: This is not an official Nucleus Security product. This SDK is maintained by Loc Mai and is not affiliated with, officially maintained, or endorsed by Nucleus Security. For official Nucleus Security products, please visit [nucleussec.com](https://nucleussec.com).
+A Python SDK for interacting with the Nucleus API. This SDK provides a simple and intuitive interface to access Nucleus's vulnerability management platform, with support for both synchronous and asynchronous operations.
 
 ## Features
 
-- Full support for Nucleus Security API endpoints
+- Full support for Nucleus API endpoints
 - Async support for high-performance operations
 - Built-in caching to reduce API calls
 - Rate limiting to prevent API throttling
@@ -19,7 +73,7 @@ This is an **unofficial** third-party Python SDK for interacting with the Nucleu
 ## Installation
 
 ```bash
-pip install nucleus-security-api-wrapper
+pip install nucleus-sdk
 ```
 
 ## Quick Start
@@ -205,19 +259,11 @@ The SDK comes with several examples:
 
 ## API Documentation
 
-For official API documentation, please visit the [Nucleus Security API Documentation](https://api-docs.nucleussec.com/nucleus/docs/).
+For detailed API documentation, please visit the [Nucleus API Documentation](https://api-docs.nucleussec.com/nucleus/docs/).
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Disclaimer
-
-This is a third-party implementation and is not officially supported by Nucleus Security. Use at your own risk. While we strive to maintain compatibility with the Nucleus Security API, we cannot guarantee immediate updates when the API changes.
-
-## Author
-
-Maintained by Loc Mai (jobs@locm.ai)
 
 ## License
 
